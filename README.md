@@ -37,10 +37,12 @@
 Responsive Web hay còn gọi là Thiết kế Web đáp ứng là cách tiếp cận tập trung vào môi trường của người dùng trang web.
 Môi trường của người dùng sẽ phụ thuộc vào thiết bị họ đã kết nối với internet.
 Có nhiều đặc điểm môi trường tác động đến việc này bao gồm:
-  - Kết nối mạng
-  - Kích thước màn hình
-  - Loại tương tác (Màn hình cảm ứng, track pad)
-  - Độ phân giải đồ họa
+```
+ - Kết nối mạng
+ - Kích thước màn hình
+ - Loại tương tác (Màn hình cảm ứng, track pad)
+ - Độ phân giải đồ họa
+```
 Trước khi web responsive được phổ biến, nhiều công ty có tiền, họ đầu tư làm riêng 1 giao diện cho di động, 1 giao diện cho máy tính để bàn
 Nó là 2 bản mã nguồn được lập trình khác nhau, quản lý khác nhau.
 Nhưng trong cách responsive web, máy chủ luôn gửi cùng một bộ code HTML đến tất cả các thiết bị và chỉ sử dụng CSS để thay đổi cách hiển thị của trang trên các thiết bị khác nhau.

@@ -1,0 +1,91 @@
+
+.header {
+  height: 54px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.content-left {
+  background-color: beige;
+  margin: 1%;
+  margin-right: 0%;
+  width: 20%;
+}
+.content-right {
+  padding: 1%;
+  width: 80%;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flex-item:first-child {
+  background-color: yellowgreen;
+}
+.flex-item:last-child {
+  background-color: royalblue;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu a {
+  font-weight: 600;
+  background-color: beige;
+  padding: 10px 20px 10px 20px;
+}
+.menu a:hover {
+  font-weight: 700;
+  text-decoration: none;
+  background-color: aqua;
+}
+.bg-container {
+  padding-bottom: 0px; margin: 0px auto 4.375rem;
+  background: url("https://cf.shopee.vn/file/1c3ed3868e30927512fc02b3e75840f2") center top / 100% no-repeat;
+}
+.card-img-top {
+  width: auto;
+  max-height: 200px;
+}
+.item img {
+  width: 100%;
+  max-height: 640px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-title {
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .card-img-top {
+    width: auto;
+    max-height: 100px;
+  }
+  .content {
+    flex-direction: column;
+    justify-content: start;
+  }
+  .content-left {
+    display: none;
+  }
+  .content-right {
+    width: 100%;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+  }
+}

@@ -23,8 +23,8 @@
 ## 📝 Table of Contents
 
 - [Responsive Web là gì](#about)
-- [Getting Started](#getting_started)
-- [Deployment](#deployment)
+- [Viewport](#viewport)
+- [Gridview](#gridview)
 - [Usage](#usage)
 - [Built Using](#built_using)
 - [TODO](../TODO.md)
@@ -32,7 +32,7 @@
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
-## 🧐 About <a name = "about"></a>
+## 🧐 Responsive Web là gì? <a name = "about"></a>
 
 Responsive Web hay còn gọi là Thiết kế Web đáp ứng là cách tiếp cận tập trung vào môi trường của người dùng trang web.
 Môi trường của người dùng sẽ phụ thuộc vào thiết bị họ đã kết nối với internet.
@@ -48,11 +48,20 @@ Nó là 2 bản mã nguồn được lập trình khác nhau, quản lý khác n
 Nhưng trong cách responsive web, máy chủ luôn gửi cùng một bộ code HTML đến tất cả các thiết bị và chỉ sử dụng CSS để thay đổi cách hiển thị của trang trên các thiết bị khác nhau.
 
 
-## 🏁 Getting Started <a name = "getting_started"></a>
+## 🏁 Viewport <a name = "viewport"></a>
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+```
+Viewport là khung hình người dùng nhìn thấy trên thiết bị của họ khi vào một trang web bất kì. Với mỗi thiết khác nhau lại có viewport khác nhau. Nếu trang web cố định kích thước thì trình duyệt sẽ tự động thu nhỏ nội dung khi chuyển từ màn hình máy tính qua smartphone - điều này tạo nên trải nghiệm không tốt cho người dùng.
+```
+Chúng ta cần thêm Viewport để responsive website
+```
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
+- Thẻ <meta> viewport thiết lập cho trang web hiển thị tương ứng với kích thước của từng thiết bị khác nhau.
+- Thuộc tính width=device-width đặt chiều rộng của trang web theo chiều rộng màn hình của thiết bị.
+- Thuộc tính initial-scale=1.0 thiết lập mức độ phóng ban đầu khi trang được trình duyệt tải lần đầu tiên, người dùng sẽ không thể zoom khi thuộc tính này có giá trị bằng 1.
 
-### Prerequisites
+### Gridview <a name = "gridview"></a>
 
 What things you need to install the software and how to install them.
 

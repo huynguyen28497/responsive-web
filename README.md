@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/OXKLK5y.png" alt="Project logo"></a>
+ <img width=200px height=200px src="https://i.imgur.com/OXKLK5y.png" alt="Project logo" /></a>
 </p>
 
 <h3 align="center">Responsive Web</h3>
@@ -79,37 +79,177 @@ Một grid sẽ bao gồm hai thành phần chính: wrapper đóng vai trò grid
   display: grid; /* hoặc inline-grid | subgrid */
 }
 ```
+<img width=200px height=200px src="https://i.imgur.com/Dj1TFtf.png" alt="Project logo" />
+
+Cột và hàng
+- Để chia grid thành các cột và các hàng, chúng ta sẽ sử dụng 2 thuộc tính grid-template-columns và grid-template-rows.
+```
+.wrapper {
+  grid-template-columns: <track-size>...;
+  grid-template-rows: <track-size>...;
+}
+```
+Trong đó:
+```
+Số giá trị trong thuộc tính grid-template-columns sẽ tương ứng với số cột, các giá trị sẽ tương ứng với chiều rộng của các cột lần lượt từ trái sang phải.
+Số giá trị trong thuộc tính grid-template-rows sẽ tương ứng số hàng, các giá trị sẽ tương ứng với chiều cao của các hàng lần lượt từ trên xuống dưới.
+```
+VD: Để tạo một grid kích thước 3x2, bạn có thể viết như sau:
+```
+.wrapper {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 100px 100px;
+}
+```
+```
+Trong đoạn code trên, chúng ta đưa cho thuộc tính grid-template-columns 3 giá trị, như vậy, grid của chúng ta sẽ có 3 cột, mỗi cột đều có chiều rộng là 200px. Tương tự, thuộc tính grid-template-rows có 2 giá trị, tương ứng với 2 hàng, mỗi hàng có chiều cao là 100px.
+```
+<img width=200px height=200px src="https://i.imgur.com/Bgv6U15.png" alt="Project logo" />
+Grid gaps
+- Khoảng cách giữa các cột trong grid được gọi là column-gap, còn khoảng cách giữa các hàng trong grid được gọi là row-gap. Để thay đổi khoảng cách giữa các cột và các hàng, chúng ta sẽ sử dụng grid-column-gap và grid-row-gap.
+
+```
+.wrapper {
+  grid-column-gap: <line-size>;
+  grid-row-gap: <line-size>;
+}
+```
+Trong đó: 
+```
+<line-size> là một giá trị chiều dài
+
+```
+Để viết ngắn gọn hơn, ta dùng grid-gap. Giá trị thứ nhất sẽ tương ứng với grid-column-gap, còn giá trị thứ hai sẽ tương ứng với grid-row-gap.
+VD: 
+```
+.wrapper {
+    display: grid;
+    grid-gap: 50px 25px;
+}
+```
+<img width=200px height=200px src="https://i.imgur.com/F74FKWM.png" alt="Project logo" />
+Sắp xếp các item trong grid
+
+- Với mỗi item, để thay đổi kích thước cũng như vị trí, chúng ta sẽ thay đổi thuộc tính grid-column và grid-row.
+```
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+```
+Với code trên thì item bắt đầu ở cột 1 và kết thúc ở cột 4 
+<img width=200px height=200px src="https://i.imgur.com/tcs9Hpo.png" alt="Project logo" />
+Viết ngắn gọn
+```
+.item1 {
+    grid-column: 1 / 4;
+}
+```
 
 ### Flex  <a name = "Flex"></a>
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
+Flexbox là khi chúng ta căn theo 2 trục x y
+Sử dụng
+```
+display: flex;
+```
+Hướng của trục chính được xác định bởi thuộc tính flex-direction có thể có bốn giá trị:
+```
+flex-direction: row; – trục chính chạy từ trái sang phải (mặc định)
+flex-direction: row-reverse; – trục chính chạy từ phải sang trái
+flex-direction: column; – trục chính chạy từ trên xuống dưới
+flex-direction: column-reverse; – trục chính chạy từ dưới lên trên
+```
+Left to Right: row
+- Hướng flex mặc định là row; nếu bạn không thiết lập gì khác thì đây sẽ là giá trị được sử dụng. Như bạn có thể thấy bên dưới, tôi chỉ thêm các thuộc tính liên quan đến flexbox vào thùng chứa flex. Các phần tử flex đã áp dụng một số thuộc  tính với mục đích trang trí:
+Right to Left: column
+Một trò chơi để học full flex
 
 ```
-Give the example
+https://flexboxfroggy.com/#vi
 ```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
 
 ## 🔧 Media Query <a name = "Media-Query"></a>
 
-Explain how to run the automated tests for this system.
+Media Query là một trong những module mới được thêm vào trong CSS3. Nó là một sự cải thiện của Media Type đã có từ CSS2, bằng việc thêm vào những cú pháp query để ta có thể đáp ứng được cho nhiều device với nhiều kích cỡ màn hình khác nhau.
+Media Type
+Tất cả các giá trị của Media Type bao gồm
+
+- All: Dùng cho tất cả các loại Media Type
+- Aural: Dùng cho speech and sound synthesizers
+- Braille: Dùng cho các devices liên quan đến chữ nổi (braille)
+- Embossed: Dùng cho các loại máy in các trang braille
+- Handheld: Dùng cho các thiết bị nhỏ, thiết bị cầm tay
+- Print: Dùng cho máy in
+- Projection: Dùng cho các loại máy chiếu
+- Screen: Dùng cho computer screen
+- Tty: Dùng cho các thiết bị sử dụng fixed-pitch character grid
+- Tv: Dùng cho các loại TV
+Ta có thể sử dụng Media Type theo cú pháp sau đây:
+```
+@media media_type {rules}
+```
+Một số breakpoint quan trọng khi responsive
+<img width=200px height=200px src="https://i.imgur.com/jfIofW3.png" alt="Project logo" />
+Mobile First - Desktop First 
+Mobile first
+- Nói theo nghĩa của nó thì chúng ta sẽ code một giao diện từ thiết bị nhỏ cho tới thiết bị to, từ mobile tới tablet rồi tới laptop và các màn hình lớn như Retina.
+Desktop first
+- Ngược lại với mobile first thì chúng ta sẽ code các giao diện từ lớn đến bé từ Retina cho tới laptop, rồi tới tablet và cuối cùng là các thiết bị mobile
+Tùy vào từng dự án ta sẽ chọn type phù hợp 
+VD:
+```
+@media (max-width: 900px) { body {font-size: 16px;} }
+/*Áp dụng cho những browser có chiều rộng >= 600px*/
+@media (min-width: 600px) { body {font-size: 14px;} }
+/*Áp dụng cho những browser có chiều rộng >= 800px*/
+@media (min-width: 800px) { body {font-size: 15px;} }
+/*Áp dụng cho những browser có chiều rộng <= 700px*/
+@media (max-width: 700px) { body {font-size: 13px;} }
+```
+Như ở trên trang web mẫu
+Khi screen thay đổi, gridview cũng thay đổi số lượng cột hàng tương ứng
+```
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+@media screen and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 10px;
+  }
+}
+```
+Hoặc thay vì flex chia đôi thì một bên sẽ ẩn, một bên sẽ width 100%
+```
+.content-left {
+  background-color: beige;
+  margin: 1%;
+  margin-right: 0%;
+  width: 20%;
+}
+.content-right {
+  padding: 1%;
+  width: 80%;
+}
+@media screen and (max-width: 768px) {
+  .content-left {
+    display: none;
+  }
+  .content-right {
+    width: 100%;
+  }
+ }
+```
 
 ### Tổng kết <a name = "Tổng_Kết"></a>
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
+Trên đây là hng dẫn học responsive cơ bản nhất. Mong mọi người bổ sung và góp ý thêm
 
 
 ## ✍️ Authors <a name = "authors"></a>

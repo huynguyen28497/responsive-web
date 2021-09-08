@@ -79,7 +79,7 @@ Một grid sẽ bao gồm hai thành phần chính: wrapper đóng vai trò grid
   display: grid; /* hoặc inline-grid | subgrid */
 }
 ```
-<img width=200px height=200px src="https://i.imgur.com/Dj1TFtf.png" alt="Project logo" />
+<img width=100% height=100% src="https://i.imgur.com/DlEm1Fv.png" alt="Project logo" />
 
 Cột và hàng
 - Để chia grid thành các cột và các hàng, chúng ta sẽ sử dụng 2 thuộc tính grid-template-columns và grid-template-rows.
@@ -105,7 +105,7 @@ VD: Để tạo một grid kích thước 3x2, bạn có thể viết như sau:
 ```
 Trong đoạn code trên, chúng ta đưa cho thuộc tính grid-template-columns 3 giá trị, như vậy, grid của chúng ta sẽ có 3 cột, mỗi cột đều có chiều rộng là 200px. Tương tự, thuộc tính grid-template-rows có 2 giá trị, tương ứng với 2 hàng, mỗi hàng có chiều cao là 100px.
 ```
-<img width=200px height=200px src="https://i.imgur.com/Bgv6U15.png" alt="Project logo" />
+<img width=100% height=100% src="https://i.imgur.com/2WJ63nx.png" alt="Project logo" />
 Grid gaps
 - Khoảng cách giữa các cột trong grid được gọi là column-gap, còn khoảng cách giữa các hàng trong grid được gọi là row-gap. Để thay đổi khoảng cách giữa các cột và các hàng, chúng ta sẽ sử dụng grid-column-gap và grid-row-gap.
 
@@ -128,7 +128,7 @@ VD:
     grid-gap: 50px 25px;
 }
 ```
-<img width=200px height=200px src="https://i.imgur.com/F74FKWM.png" alt="Project logo" />
+<img width=100% height=100% src="https://i.imgur.com/omxvnK3.png" alt="Project logo" />
 Sắp xếp các item trong grid
 
 - Với mỗi item, để thay đổi kích thước cũng như vị trí, chúng ta sẽ thay đổi thuộc tính grid-column và grid-row.
@@ -139,7 +139,7 @@ Sắp xếp các item trong grid
 }
 ```
 Với code trên thì item bắt đầu ở cột 1 và kết thúc ở cột 4 
-<img width=200px height=200px src="https://i.imgur.com/tcs9Hpo.png" alt="Project logo" />
+<img width=100% height=100% src="https://i.imgur.com/S3fG2nJ.png" alt="Project logo" />
 Viết ngắn gọn
 ```
 .item1 {
@@ -192,7 +192,7 @@ Ta có thể sử dụng Media Type theo cú pháp sau đây:
 @media media_type {rules}
 ```
 Một số breakpoint quan trọng khi responsive
-<img width=200px height=200px src="https://i.imgur.com/jfIofW3.png" alt="Project logo" />
+<img width=100% height=100% src="https://i.imgur.com/P14gmAe.png" alt="Project logo" />
 Mobile First - Desktop First 
 Mobile first
 - Nói theo nghĩa của nó thì chúng ta sẽ code một giao diện từ thiết bị nhỏ cho tới thiết bị to, từ mobile tới tablet rồi tới laptop và các màn hình lớn như Retina.

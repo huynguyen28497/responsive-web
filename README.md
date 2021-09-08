@@ -25,12 +25,10 @@
 - [Responsive Web là gì](#about)
 - [Viewport](#viewport)
 - [Gridview](#gridview)
-- [Usage](#usage)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
+- [Flex](#Flex)
+- [Media-Query](#Media-Query)
+- [Tổng kết](#Tổng_Kết)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
 ## 🧐 Responsive Web là gì? <a name = "about"></a>
 
@@ -63,13 +61,26 @@ Chúng ta cần thêm Viewport để responsive website
 
 ### Gridview <a name = "gridview"></a>
 
-What things you need to install the software and how to install them.
+Một grid sẽ bao gồm hai thành phần chính: wrapper đóng vai trò grid container, và các item con là thành phần của grid.
 
 ```
-Give examples
+<div class="wrapper">
+  <div class="item item1">1</div>
+  <div class="item item2">2</div>
+  <div class="item item3">3</div>
+  <div class="item item4">4</div>
+  <div class="item item5">5</div>
+  <div class="item item6">6</div>
+</div>
+```
+Để chuyển wrapper thành grid, chúng ta chỉ cần thay đổi thuộc tính display:
+```
+.wrapper {
+  display: grid; /* hoặc inline-grid | subgrid */
+}
 ```
 
-### Installing
+### Flex  <a name = "Flex"></a>
 
 A step by step series of examples that tell you how to get a development env running.
 
@@ -87,11 +98,11 @@ until finished
 
 End with an example of getting some data out of the system or using it for a little demo.
 
-## 🔧 Running the tests <a name = "tests"></a>
+## 🔧 Media Query <a name = "Media-Query"></a>
 
 Explain how to run the automated tests for this system.
 
-### Break down into end to end tests
+### Tổng kết <a name = "Tổng_Kết"></a>
 
 Explain what these tests test and why
 
@@ -99,37 +110,11 @@ Explain what these tests test and why
 Give an example
 ```
 
-### And coding style tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## 🎈 Usage <a name="usage"></a>
-
-Add notes about how to use the system.
-
-## 🚀 Deployment <a name = "deployment"></a>
-
-Add additional notes about how to deploy this on a live system.
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [MongoDB](https://www.mongodb.com/) - Database
-- [Express](https://expressjs.com/) - Server Framework
-- [VueJs](https://vuejs.org/) - Web Framework
-- [NodeJs](https://nodejs.org/en/) - Server Environment
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/kylelobo) - Idea & Initial work
+DU21 - NDHUY
 
-See also the list of [contributors](https://github.com/kylelobo/The-Documentation-Compendium/contributors) who participated in this project.
 
-## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- References
